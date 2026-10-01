@@ -150,33 +150,35 @@ rule Win32_Trojan_Emotet : tc_detection malicious
         }
 
     condition:
-        uint16(0) == 0x5A4D and 
+        uint16(0) == 0x5A4D and
         (
-            $decrypt_resource_v1 and 
-            $generate_filename_v1
-        ) or 
-        (
-            $decrypt_resource_v2 and 
-            $generate_filename_v2
-        ) or
-        (
-            $decrypt_resource_v3 and 
-            $generate_filename_v3
-        ) or
-        (
-            $decrypt_resource_v4 and 
-            $generate_filename_snippet_v4
-        ) or
-        (
-            $decrypt_resource_snippet_v5 and
-            all of ($liblzf_decompression_*)
-        ) or
-        (
-            $decrypt_resource_snippet_v6 and
-            all of ($liblzf_decompression_*)
-        ) or
-        (
-            $decrypt_resource_snippet_v7 and
-            $state_machine_snippet_v7
+            (
+                $decrypt_resource_v1 and
+                $generate_filename_v1
+            ) or
+            (
+                $decrypt_resource_v2 and
+                $generate_filename_v2
+            ) or
+            (
+                $decrypt_resource_v3 and
+                $generate_filename_v3
+            ) or
+            (
+                $decrypt_resource_v4 and
+                $generate_filename_snippet_v4
+            ) or
+            (
+                $decrypt_resource_snippet_v5 and
+                all of ($liblzf_decompression_*)
+            ) or
+            (
+                $decrypt_resource_snippet_v6 and
+                all of ($liblzf_decompression_*)
+            ) or
+            (
+                $decrypt_resource_snippet_v7 and
+                $state_machine_snippet_v7
+            )
         )
 }

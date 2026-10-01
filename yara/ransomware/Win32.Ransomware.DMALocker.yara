@@ -141,9 +141,12 @@ rule Win32_Ransomware_DMALocker : tc_detection malicious
         }
 
     condition:
-        uint16(0) == 0x5A4D and ($dmalock_v1_encrypt_files_1 and $dmalock_v1_encrypt_files_2 and $dmalock_v1_encrypt_files_3 and $dmalock_v1_enum_shares_and_discs_type_1) or
-        ($dmalock_v1_encrypt_files_1 and $dmalock_v1_encrypt_files_2 and $dmalock_v1_encrypt_files_3 and $dmalock_v1_enum_shares_and_discs_type_2) or
-        ($dmalock_v1_encrypt_files_1 and $dmalock_v1_encrypt_files_2 and $dmalock_v1_encrypt_files_3 and $dmalock_v1_enum_shares_and_discs_type_3) or
-        ($dmalock_v1_encrypt_files_1 and $dmalock_v1_encrypt_files_3 and $dmalock_v1_enum_shares_and_discs_type_1 and $dmalock_v2_enum_logical_disks) or
-        ($dmalock_v4_encrypt_file_1 and $dmalock_v4_encrypt_file_2 and $dmalock_v4_remote_server_communication and $dmalock_v2_enum_logical_disks)
+        uint16(0) == 0x5A4D and
+        (
+            ($dmalock_v1_encrypt_files_1 and $dmalock_v1_encrypt_files_2 and $dmalock_v1_encrypt_files_3 and $dmalock_v1_enum_shares_and_discs_type_1) or
+            ($dmalock_v1_encrypt_files_1 and $dmalock_v1_encrypt_files_2 and $dmalock_v1_encrypt_files_3 and $dmalock_v1_enum_shares_and_discs_type_2) or
+            ($dmalock_v1_encrypt_files_1 and $dmalock_v1_encrypt_files_2 and $dmalock_v1_encrypt_files_3 and $dmalock_v1_enum_shares_and_discs_type_3) or
+            ($dmalock_v1_encrypt_files_1 and $dmalock_v1_encrypt_files_3 and $dmalock_v1_enum_shares_and_discs_type_1 and $dmalock_v2_enum_logical_disks) or
+            ($dmalock_v4_encrypt_file_1 and $dmalock_v4_encrypt_file_2 and $dmalock_v4_remote_server_communication and $dmalock_v2_enum_logical_disks)
+        )
 }

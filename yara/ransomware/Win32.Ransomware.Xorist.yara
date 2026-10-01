@@ -131,20 +131,22 @@ rule Win32_Ransomware_Xorist : tc_detection malicious
 
     condition:
         uint16(0) == 0x5A4D and
-        ( 
-            (
-                $extract_rsrc_v1
-            ) and 
-            (
-                all of ($search_and_encrypt_v1_p*)
-            )
-        ) or
         (
             (
-                $extract_rsrc_v2
-            ) and
+                (
+                    $extract_rsrc_v1
+                ) and
+                (
+                    all of ($search_and_encrypt_v1_p*)
+                )
+            ) or
             (
-                all of ($search_and_encrypt_v2_p*)
+                (
+                    $extract_rsrc_v2
+                ) and
+                (
+                    all of ($search_and_encrypt_v2_p*)
+                )
             )
         )
 }

@@ -138,6 +138,9 @@ rule Win32_Ransomware_FenixLocker : tc_detection malicious
         }
 
     condition:
-        uint16(0) == 0x5A4D and ($encrypt_files_1 and $encrypt_files_2 and $encrypt_files_3) or
-        ($encrypt_files_1 and $encrypt_files_4 and $encrypt_files_5)
+        uint16(0) == 0x5A4D and
+        (
+            ($encrypt_files_1 and $encrypt_files_2 and $encrypt_files_3) or
+            ($encrypt_files_1 and $encrypt_files_4 and $encrypt_files_5)
+        )
 }

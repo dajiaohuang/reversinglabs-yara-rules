@@ -756,7 +756,7 @@ rule cert_blocklist_530591c61b5e1212f659138b7cea0a97 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "\\xE6\\x97\\xA5\\xE7\\x85\\xA7\\xE5\\xB3\\xB0\\xE5\\xB7\\x9D\\xE5\\x9B\\xBD\\xE9\\x99\\x85\\xE7\\x9F\\xBF\\xE4\\xB8\\x9A\\xE8\\xB4\\xB8\\xE6\\x98\\x93\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and
+            pe.signatures[i].subject contains "\xE6\x97\xA5\xE7\x85\xA7\xE5\xB3\xB0\xE5\xB7\x9D\xE5\x9B\xBD\xE9\x99\x85\xE7\x9F\xBF\xE4\xB8\x9A\xE8\xB4\xB8\xE6\x98\x93\xE6\x9C\x89\xE9\x99\x90\xE5\x85\xAC\xE5\x8F\xB8" and
             pe.signatures[i].serial == "53:05:91:c6:1b:5e:12:12:f6:59:13:8b:7c:ea:0a:97" and
             1403654399 <= pe.signatures[i].not_after
         )
@@ -1699,7 +1699,7 @@ rule cert_blocklist_3bc3bae4118d46f3fdd9beeeab749fee {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "\\xE6\\x9D\\x8E\\xE9\\x9B\\xAA\\xE6\\xA2\\x85" and
+            pe.signatures[i].subject contains "\xE6\x9D\x8E\xE9\x9B\xAA\xE6\xA2\x85" and
             pe.signatures[i].serial == "3b:c3:ba:e4:11:8d:46:f3:fd:d9:be:ee:ab:74:9f:ee" and
             1442275199 <= pe.signatures[i].not_after
         )
@@ -2365,7 +2365,7 @@ rule cert_blocklist_fe9404dc73cf1c2ba1450b8398305557 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "\\xE5\\x8E\\xA6\\xE9\\x97\\xA8\\xE7\\xBF\\x94\\xE9\\x80\\x9A\\xE4\\xBF\\xA1\\xE6\\x81\\xAF\\xE7\\xA7\\x91\\xE6\\x8A\\x80\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8\\xE5\\x8C\\x97\\xE4\\xBA\\xAC\\xE5\\x88\\x86\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and (
+            pe.signatures[i].subject contains "\xE5\x8E\xA6\xE9\x97\xA8\xE7\xBF\x94\xE9\x80\x9A\xE4\xBF\xA1\xE6\x81\xAF\xE7\xA7\x91\xE6\x8A\x80\xE6\x9C\x89\xE9\x99\x90\xE5\x85\xAC\xE5\x8F\xB8\xE5\x8C\x97\xE4\xBA\xAC\xE5\x88\x86\xE5\x85\xAC\xE5\x8F\xB8" and (
                 pe.signatures[i].serial == "00:fe:94:04:dc:73:cf:1c:2b:a1:45:0b:83:98:30:55:57" or
                 pe.signatures[i].serial == "fe:94:04:dc:73:cf:1c:2b:a1:45:0b:83:98:30:55:57"
             ) and
@@ -2385,7 +2385,7 @@ rule cert_blocklist_1cb2d523a6bf7a066642c578de1c9be4 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Shenzhen Hua\\xE2\\x80\\x99nan Xingfa Electronic Equipment Firm" and
+            pe.signatures[i].subject contains "Shenzhen Hua\xE2\x80\x99nan Xingfa Electronic Equipment Firm" and
             pe.signatures[i].serial == "1c:b2:d5:23:a6:bf:7a:06:66:42:c5:78:de:1c:9b:e4" and
             1400889599 <= pe.signatures[i].not_after
         )
@@ -2403,7 +2403,7 @@ rule cert_blocklist_3a6ccabb1c62f3be3eb03869fa43dc4a {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "\\xE5\\xB8\\xB8\\xE5\\xB7\\x9E\\xE9\\xAA\\x8F\\xE6\\x99\\xAF\\xE9\\x80\\x9A\\xE8\\x81\\x94\\xE6\\x95\\xB0\\xE5\\xAD\\x97\\xE7\\xA7\\x91\\xE6\\x8A\\x80\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and
+            pe.signatures[i].subject contains "\xE5\xB8\xB8\xE5\xB7\x9E\xE9\xAA\x8F\xE6\x99\xAF\xE9\x80\x9A\xE8\x81\x94\xE6\x95\xB0\xE5\xAD\x97\xE7\xA7\x91\xE6\x8A\x80\xE6\x9C\x89\xE9\x99\x90\xE5\x85\xAC\xE5\x8F\xB8" and
             pe.signatures[i].serial == "3a:6c:ca:bb:1c:62:f3:be:3e:b0:38:69:fa:43:dc:4a" and
             1259798399 <= pe.signatures[i].not_after
         )
@@ -2459,7 +2459,7 @@ rule cert_blocklist_03866deb183abfbf4ff458d4de7bd73a {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "\\xE9\\x87\\x8D\\xE5\\xBA\\x86\\xE8\\xAF\\x9D\\xE8\\xAF\\xAD\\xE7\\xA7\\x91\\xE6\\x8A\\x80\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and
+            pe.signatures[i].subject contains "\xE9\x87\x8D\xE5\xBA\x86\xE8\xAF\x9D\xE8\xAF\xAD\xE7\xA7\x91\xE6\x8A\x80\xE6\x9C\x89\xE9\x99\x90\xE5\x85\xAC\xE5\x8F\xB8" and
             pe.signatures[i].serial == "03:86:6d:eb:18:3a:bf:bf:4f:f4:58:d4:de:7b:d7:3a" and
             1371772799 <= pe.signatures[i].not_after
         )
@@ -2477,7 +2477,7 @@ rule cert_blocklist_1be41b34127ca9e6270830d2070db426 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "\\xE5\\x8C\\x97\\xE4\\xBA\\xAC\\xE8\\x80\\x98\\xE5\\x8D\\x87\\xE5\\xA4\\xA9\\xE4\\xB8\\x8B\\xE7\\xA7\\x91\\xE6\\x8A\\x80\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and
+            pe.signatures[i].subject contains "\xE5\x8C\x97\xE4\xBA\xAC\xE8\x80\x98\xE5\x8D\x87\xE5\xA4\xA9\xE4\xB8\x8B\xE7\xA7\x91\xE6\x8A\x80\xE6\x9C\x89\xE9\x99\x90\xE5\x85\xAC\xE5\x8F\xB8" and
             pe.signatures[i].serial == "1b:e4:1b:34:12:7c:a9:e6:27:08:30:d2:07:0d:b4:26" and
             1352764799 <= pe.signatures[i].not_after
         )
@@ -2663,7 +2663,7 @@ rule cert_blocklist_1a0fd2a4ef4c2a36ab9c5e8f792a35e2 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "\\xE5\\x8C\\x97\\xE4\\xBA\\xAC\\xE9\\x87\\x91\\xE5\\x88\\xA9\\xE5\\xAE\\x8F\\xE6\\x98\\x8C\\xE7\\xA7\\x91\\xE6\\x8A\\x80\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and
+            pe.signatures[i].subject contains "\xE5\x8C\x97\xE4\xBA\xAC\xE9\x87\x91\xE5\x88\xA9\xE5\xAE\x8F\xE6\x98\x8C\xE7\xA7\x91\xE6\x8A\x80\xE6\x9C\x89\xE9\x99\x90\xE5\x85\xAC\xE5\x8F\xB8" and
             pe.signatures[i].serial == "1a:0f:d2:a4:ef:4c:2a:36:ab:9c:5e:8f:79:2a:35:e2" and
             1389311999 <= pe.signatures[i].not_after
         )
@@ -2681,7 +2681,7 @@ rule cert_blocklist_53bb753b79a99e61a6e822ac52460c70 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "\\xEB\\x8D\\xB0\\xEC\\x8A\\xA4\\xED\\x81\\xAC\\xED\\x83\\x91\\xEC\\x95\\x84\\xEC\\x9D\\xB4\\xEC\\xBD\\x98" and
+            pe.signatures[i].subject contains "\xEB\x8D\xB0\xEC\x8A\xA4\xED\x81\xAC\xED\x83\x91\xEC\x95\x84\xEC\x9D\xB4\xEC\xBD\x98" and
             pe.signatures[i].serial == "53:bb:75:3b:79:a9:9e:61:a6:e8:22:ac:52:46:0c:70" and
             1400543999 <= pe.signatures[i].not_after
         )
@@ -2739,7 +2739,7 @@ rule cert_blocklist_f62c9c4efc81caf0d5a2608009d48018 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "\\xE5\\x94\\x90\\xE5\\xB1\\xB1\\xE4\\xB8\\x87\\xE4\\xB8\\x9C\\xE6\\xB6\\xA6\\xE6\\x92\\xAD\\xE7\\xBD\\x91\\xE7\\xBB\\x9C\\xE6\\x8A\\x80\\xE6\\x9C\\xAF\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and (
+            pe.signatures[i].subject contains "\xE5\x94\x90\xE5\xB1\xB1\xE4\xB8\x87\xE4\xB8\x9C\xE6\xB6\xA6\xE6\x92\xAD\xE7\xBD\x91\xE7\xBB\x9C\xE6\x8A\x80\xE6\x9C\xAF\xE6\x9C\x89\xE9\x99\x90\xE5\x85\xAC\xE5\x8F\xB8" and (
                 pe.signatures[i].serial == "00:f6:2c:9c:4e:fc:81:ca:f0:d5:a2:60:80:09:d4:80:18" or
                 pe.signatures[i].serial == "f6:2c:9c:4e:fc:81:ca:f0:d5:a2:60:80:09:d4:80:18"
             ) and
@@ -2759,7 +2759,7 @@ rule cert_blocklist_cc8d902da36587c9b2113cd76c3c3f8d {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "\\xE4\\xB8\\x8A\\xE6\\xB5\\xB7\\xE9\\x87\\x91\\xE4\\xBF\\x8A\\xE5\\x9D\\xA4\\xE8\\xAE\\xA1\\xE7\\xAE\\x97\\xE6\\x9C\\xBA\\xE6\\x8A\\x80\\xE6\\x9C\\xAF\\xE6\\x9C\\x8D\\xE5\\x8A\\xA1\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and (
+            pe.signatures[i].subject contains "\xE4\xB8\x8A\xE6\xB5\xB7\xE9\x87\x91\xE4\xBF\x8A\xE5\x9D\xA4\xE8\xAE\xA1\xE7\xAE\x97\xE6\x9C\xBA\xE6\x8A\x80\xE6\x9C\xAF\xE6\x9C\x8D\xE5\x8A\xA1\xE6\x9C\x89\xE9\x99\x90\xE5\x85\xAC\xE5\x8F\xB8" and (
                 pe.signatures[i].serial == "00:cc:8d:90:2d:a3:65:87:c9:b2:11:3c:d7:6c:3c:3f:8d" or
                 pe.signatures[i].serial == "cc:8d:90:2d:a3:65:87:c9:b2:11:3c:d7:6c:3c:3f:8d"
             ) and
@@ -2797,7 +2797,7 @@ rule cert_blocklist_5f78149eb4f75eb17404a8143aaeaed7 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "\\xE4\\xB8\\x8A\\xE6\\xB5\\xB7\\xE5\\x9F\\x9F\\xE8\\x81\\x94\\xE8\\xBD\\xAF\\xE4\\xBB\\xB6\\xE6\\x8A\\x80\\xE6\\x9C\\xAF\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and
+            pe.signatures[i].subject contains "\xE4\xB8\x8A\xE6\xB5\xB7\xE5\x9F\x9F\xE8\x81\x94\xE8\xBD\xAF\xE4\xBB\xB6\xE6\x8A\x80\xE6\x9C\xAF\xE6\x9C\x89\xE9\x99\x90\xE5\x85\xAC\xE5\x8F\xB8" and
             pe.signatures[i].serial == "5f:78:14:9e:b4:f7:5e:b1:74:04:a8:14:3a:ae:ae:d7" and
             1303116124 <= pe.signatures[i].not_after
         )
@@ -7531,7 +7531,7 @@ rule cert_blocklist_029685cda1c8233d2409a31206f78f9f {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "KOTO TRADE, dru\\xC5\\xBEba za posredovanje, d.o.o." and
+            pe.signatures[i].subject contains "KOTO TRADE, dru\xC5\xBEba za posredovanje, d.o.o." and
             pe.signatures[i].serial == "02:96:85:cd:a1:c8:23:3d:24:09:a3:12:06:f7:8f:9f" and
             1612396800 <= pe.signatures[i].not_after
         )
@@ -7661,7 +7661,7 @@ rule cert_blocklist_30af0d0e6d8201a5369664c5ebbb010f {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "3N-\\xC5\\xA0PORT podjetje za in\\xC5\\xBEeniring, storitve in trgovino d.o.o." and
+            pe.signatures[i].subject contains "3N-\xC5\xA0PORT podjetje za in\xC5\xBEeniring, storitve in trgovino d.o.o." and
             pe.signatures[i].serial == "30:af:0d:0e:6d:82:01:a5:36:96:64:c5:eb:bb:01:0f" and
             1613433600 <= pe.signatures[i].not_after
         )
@@ -8481,7 +8481,7 @@ rule cert_blocklist_d1b8f1fe56381befdb2e73ffef2a4b28 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Sein\\xC3\\xA4joen Squash ja Bowling Oy" and (
+            pe.signatures[i].subject contains "Sein\xC3\xA4joen Squash ja Bowling Oy" and (
                 pe.signatures[i].serial == "00:d1:b8:f1:fe:56:38:1b:ef:db:2e:73:ff:ef:2a:4b:28" or
                 pe.signatures[i].serial == "d1:b8:f1:fe:56:38:1b:ef:db:2e:73:ff:ef:2a:4b:28"
             ) and
@@ -8951,7 +8951,7 @@ rule cert_blocklist_8b3333d32b2c2a1d33b41ba5db9d4d2d {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "BOOK CAF\\xC3\\x89, s.r.o." and (
+            pe.signatures[i].subject contains "BOOK CAF\xC3\x89, s.r.o." and (
                 pe.signatures[i].serial == "00:8b:33:33:d3:2b:2c:2a:1d:33:b4:1b:a5:db:9d:4d:2d" or
                 pe.signatures[i].serial == "8b:33:33:d3:2b:2c:2a:1d:33:b4:1b:a5:db:9d:4d:2d"
             ) and
@@ -9285,7 +9285,7 @@ rule cert_blocklist_09450b8f73ea43e39d2cdd56049dbe40 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "\\xE4\\xB9\\x9D\\xE6\\xB1\\x9F\\xE5\\xAE\\x8F\\xE5\\x9B\\xBE\\xE6\\x97\\xA0\\xE5\\xBF\\xA7\\xE7\\xA7\\x91\\xE6\\x8A\\x80\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and
+            pe.signatures[i].subject contains "\xE4\xB9\x9D\xE6\xB1\x9F\xE5\xAE\x8F\xE5\x9B\xBE\xE6\x97\xA0\xE5\xBF\xA7\xE7\xA7\x91\xE6\x8A\x80\xE6\x9C\x89\xE9\x99\x90\xE5\x85\xAC\xE5\x8F\xB8" and
             pe.signatures[i].serial == "09:45:0b:8f:73:ea:43:e3:9d:2c:dd:56:04:9d:be:40" and
             1561602110 <= pe.signatures[i].not_after
         )
@@ -9303,7 +9303,7 @@ rule cert_blocklist_0efd9bd4b4281c6522d96011df46c9c4 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "\\xE9\\x9B\\xB7\\xE7\\xA5\\x9E\\xEF\\xBC\\x88\\xE6\\xAD\\xA6\\xE6\\xB1\\x89\\xEF\\xBC\\x89\\xE4\\xBF\\xA1\\xE6\\x81\\xAF\\xE6\\x8A\\x80\\xE6\\x9C\\xAF\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and
+            pe.signatures[i].subject contains "\xE9\x9B\xB7\xE7\xA5\x9E\xEF\xBC\x88\xE6\xAD\xA6\xE6\xB1\x89\xEF\xBC\x89\xE4\xBF\xA1\xE6\x81\xAF\xE6\x8A\x80\xE6\x9C\xAF\xE6\x9C\x89\xE9\x99\x90\xE5\x85\xAC\xE5\x8F\xB8" and
             pe.signatures[i].serial == "0e:fd:9b:d4:b4:28:1c:65:22:d9:60:11:df:46:c9:c4" and
             1586249095 <= pe.signatures[i].not_after
         )
@@ -9321,7 +9321,7 @@ rule cert_blocklist_0dd7d4a785990584d8c0837659173272 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "\\xE9\\x9B\\xB7\\xE7\\xA5\\x9E\\xEF\\xBC\\x88\\xE6\\xAD\\xA6\\xE6\\xB1\\x89\\xEF\\xBC\\x89\\xE4\\xBF\\xA1\\xE6\\x81\\xAF\\xE6\\x8A\\x80\\xE6\\x9C\\xAF\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and
+            pe.signatures[i].subject contains "\xE9\x9B\xB7\xE7\xA5\x9E\xEF\xBC\x88\xE6\xAD\xA6\xE6\xB1\x89\xEF\xBC\x89\xE4\xBF\xA1\xE6\x81\xAF\xE6\x8A\x80\xE6\x9C\xAF\xE6\x9C\x89\xE9\x99\x90\xE5\x85\xAC\xE5\x8F\xB8" and
             pe.signatures[i].serial == "0d:d7:d4:a7:85:99:05:84:d8:c0:83:76:59:17:32:72" and
             1586249095 <= pe.signatures[i].not_after
         )
@@ -9339,7 +9339,7 @@ rule cert_blocklist_0c59d46580f039af2c4ab6ba0ffed197 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "\\xE5\\xA4\\xA7\\xE8\\xBF\\x9E\\xE7\\xBA\\xB5\\xE6\\xA2\\xA6\\xE7\\xBD\\x91\\xE7\\xBB\\x9C\\xE7\\xA7\\x91\\xE6\\x8A\\x80\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and
+            pe.signatures[i].subject contains "\xE5\xA4\xA7\xE8\xBF\x9E\xE7\xBA\xB5\xE6\xA2\xA6\xE7\xBD\x91\xE7\xBB\x9C\xE7\xA7\x91\xE6\x8A\x80\xE6\x9C\x89\xE9\x99\x90\xE5\x85\xAC\xE5\x8F\xB8" and
             pe.signatures[i].serial == "0c:59:d4:65:80:f0:39:af:2c:4a:b6:ba:0f:fe:d1:97" and
             1585108595 <= pe.signatures[i].not_after
         )
@@ -9357,7 +9357,7 @@ rule cert_blocklist_0448ec8d26597f99912138500cc41c1b {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "\\xE5\\xA4\\xA7\\xE8\\xBF\\x9E\\xE7\\xBA\\xB5\\xE6\\xA2\\xA6\\xE7\\xBD\\x91\\xE7\\xBB\\x9C\\xE7\\xA7\\x91\\xE6\\x8A\\x80\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and
+            pe.signatures[i].subject contains "\xE5\xA4\xA7\xE8\xBF\x9E\xE7\xBA\xB5\xE6\xA2\xA6\xE7\xBD\x91\xE7\xBB\x9C\xE7\xA7\x91\xE6\x8A\x80\xE6\x9C\x89\xE9\x99\x90\xE5\x85\xAC\xE5\x8F\xB8" and
             pe.signatures[i].serial == "04:48:ec:8d:26:59:7f:99:91:21:38:50:0c:c4:1c:1b" and
             1585108595 <= pe.signatures[i].not_after
         )
@@ -9375,7 +9375,7 @@ rule cert_blocklist_0108cbaee60728f5bf06e45a56d6f170 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "\\xE6\\xAD\\xA6\\xE6\\xB1\\x89\\xE4\\xB8\\x9C\\xE6\\xB9\\x96\\xE6\\x96\\xB0\\xE6\\x8A\\x80\\xE6\\x9C\\xAF\\xE5\\xBC\\x80\\xE5\\x8F\\x91\\xE5\\x8C\\xBA" and
+            pe.signatures[i].subject contains "\xE6\xAD\xA6\xE6\xB1\x89\xE4\xB8\x9C\xE6\xB9\x96\xE6\x96\xB0\xE6\x8A\x80\xE6\x9C\xAF\xE5\xBC\x80\xE5\x8F\x91\xE5\x8C\xBA" and
             pe.signatures[i].serial == "01:08:cb:ae:e6:07:28:f5:bf:06:e4:5a:56:d6:f1:70" and
             1605680260 <= pe.signatures[i].not_after
         )
@@ -9393,7 +9393,7 @@ rule cert_blocklist_038d56a12153e8b5c74c69bff65cbe3f {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "\\xE6\\xAD\\xA6\\xE6\\xB1\\x89\\xE5\\x86\\x85\\xE7\\x91\\x9F\\xE6\\x96\\xAF\\xE7\\xA7\\x91\\xE6\\x8A\\x80\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and
+            pe.signatures[i].subject contains "\xE6\xAD\xA6\xE6\xB1\x89\xE5\x86\x85\xE7\x91\x9F\xE6\x96\xAF\xE7\xA7\x91\xE6\x8A\x80\xE6\x9C\x89\xE9\x99\x90\xE5\x85\xAC\xE5\x8F\xB8" and
             pe.signatures[i].serial == "03:8d:56:a1:21:53:e8:b5:c7:4c:69:bf:f6:5c:be:3f" and
             1605680260 <= pe.signatures[i].not_after
         )
@@ -9447,7 +9447,7 @@ rule cert_blocklist_0c4324ff41f0a7b16ffcc93dffa8fa99 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "\\xE7\\xA6\\x8F\\xE5\\xBB\\xBA\\xE7\\x9C\\x81\\xE4\\xBA\\x94\\xE6\\x98\\x9F\\xE4\\xBF\\xA1\\xE6\\x81\\xAF\\xE7\\xA7\\x91\\xE6\\x8A\\x80\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and
+            pe.signatures[i].subject contains "\xE7\xA6\x8F\xE5\xBB\xBA\xE7\x9C\x81\xE4\xBA\x94\xE6\x98\x9F\xE4\xBF\xA1\xE6\x81\xAF\xE7\xA7\x91\xE6\x8A\x80\xE6\x9C\x89\xE9\x99\x90\xE5\x85\xAC\xE5\x8F\xB8" and
             pe.signatures[i].serial == "0c:43:24:ff:41:f0:a7:b1:6f:fc:c9:3d:ff:a8:fa:99" and
             1600300800 <= pe.signatures[i].not_after
         )
@@ -10707,7 +10707,7 @@ rule cert_blocklist_26f855a25890b749578f13e4b9459768 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Boo\\xE2\\x80\\x99s Q & Sweets Corporation" and
+            pe.signatures[i].subject contains "Boo\xE2\x80\x99s Q & Sweets Corporation" and
             pe.signatures[i].serial == "26:f8:55:a2:58:90:b7:49:57:8f:13:e4:b9:45:97:68" and
             1645401600 <= pe.signatures[i].not_after
         )
@@ -10907,7 +10907,7 @@ rule cert_blocklist_e7e7f7180666546ce7a8da32119f5ce1 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "C\\xC3\\x94NG TY TNHH PDF SOFTWARE" and (
+            pe.signatures[i].subject contains "C\xC3\x94NG TY TNHH PDF SOFTWARE" and (
                 pe.signatures[i].serial == "00:e7:e7:f7:18:06:66:54:6c:e7:a8:da:32:11:9f:5c:e1" or
                 pe.signatures[i].serial == "e7:e7:f7:18:06:66:54:6c:e7:a8:da:32:11:9f:5c:e1"
             ) and
@@ -11469,7 +11469,7 @@ rule cert_blocklist_0cf2d0b5bfdd68cf777a0c12f806a569 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "PROTIP d.o.o. - v ste\\xC4\\x8Daju" and
+            pe.signatures[i].subject contains "PROTIP d.o.o. - v ste\xC4\x8Daju" and
             pe.signatures[i].serial == "0c:f2:d0:b5:bf:dd:68:cf:77:7a:0c:12:f8:06:a5:69" and
             1611705600 <= pe.signatures[i].not_after
         )
@@ -11753,7 +11753,7 @@ rule cert_blocklist_984e84cfe362e278f558e2c70aaafac2 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Arctic Nights \\xC3\\x84k\\xC3\\xA4slompolo Oy" and (
+            pe.signatures[i].subject contains "Arctic Nights \xC3\x84k\xC3\xA4slompolo Oy" and (
                 pe.signatures[i].serial == "00:98:4e:84:cf:e3:62:e2:78:f5:58:e2:c7:0a:aa:fa:c2" or
                 pe.signatures[i].serial == "98:4e:84:cf:e3:62:e2:78:f5:58:e2:c7:0a:aa:fa:c2"
             ) and
@@ -12039,7 +12039,7 @@ rule cert_blocklist_142aac4217e22b525c8587589773ba9b {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "A.B. gostinstvo trgovina posredni\\xC5\\xA1tvo in druge storitve, d.o.o." and
+            pe.signatures[i].subject contains "A.B. gostinstvo trgovina posredni\xC5\xA1tvo in druge storitve, d.o.o." and
             pe.signatures[i].serial == "14:2a:ac:42:17:e2:2b:52:5c:85:87:58:97:73:ba:9b" and
             1614124800 <= pe.signatures[i].not_after
         )
@@ -12245,7 +12245,7 @@ rule cert_blocklist_afc0ddb7bdc8207e8c3b7204018eecd3 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "\\xE9\\x83\\xB4\\xE5\\xB7\\x9E\\xE8\\x9C\\x97\\xE7\\x89\\x9B\\xE7\\xBD\\x91\\xE7\\xBB\\x9C\\xE7\\xA7\\x91\\xE6\\x8A\\x80\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and (
+            pe.signatures[i].subject contains "\xE9\x83\xB4\xE5\xB7\x9E\xE8\x9C\x97\xE7\x89\x9B\xE7\xBD\x91\xE7\xBB\x9C\xE7\xA7\x91\xE6\x8A\x80\xE6\x9C\x89\xE9\x99\x90\xE5\x85\xAC\xE5\x8F\xB8" and (
                 pe.signatures[i].serial == "00:af:c0:dd:b7:bd:c8:20:7e:8c:3b:72:04:01:8e:ec:d3" or
                 pe.signatures[i].serial == "af:c0:dd:b7:bd:c8:20:7e:8c:3b:72:04:01:8e:ec:d3"
             ) and
@@ -12471,7 +12471,7 @@ rule cert_blocklist_4631713e66e91347f0388b98cf747794 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "\\xE5\\xB9\\xBF\\xE5\\xB7\\x9E\\xE6\\x98\\x8A\\xE5\\x8A\\xA8\\xE7\\xBD\\x91\\xE7\\xBB\\x9C\\xE7\\xA7\\x91\\xE6\\x8A\\x80\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and
+            pe.signatures[i].subject contains "\xE5\xB9\xBF\xE5\xB7\x9E\xE6\x98\x8A\xE5\x8A\xA8\xE7\xBD\x91\xE7\xBB\x9C\xE7\xA7\x91\xE6\x8A\x80\xE6\x9C\x89\xE9\x99\x90\xE5\x85\xAC\xE5\x8F\xB8" and
             pe.signatures[i].serial == "46:31:71:3e:66:e9:13:47:f0:38:8b:98:cf:74:77:94" and
             1488240000 <= pe.signatures[i].not_after
         )
@@ -12527,7 +12527,7 @@ rule cert_blocklist_35b49ee870aea532e6ef0a4987105c8f {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Kancelaria Adwokacka Adwokat Aleksandra Krzemi\\xC5\\x84ska" and
+            pe.signatures[i].subject contains "Kancelaria Adwokacka Adwokat Aleksandra Krzemi\xC5\x84ska" and
             pe.signatures[i].serial == "35:b4:9e:e8:70:ae:a5:32:e6:ef:0a:49:87:10:5c:8f" and
             1663151018 <= pe.signatures[i].not_after
         )
@@ -12599,7 +12599,7 @@ rule cert_blocklist_f5f9c8f8c33e4ce84dd48fcb03ccb075 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Abdulkadir \\xC5\\x9Eahin" and (
+            pe.signatures[i].subject contains "Abdulkadir \xC5\x9Eahin" and (
                 pe.signatures[i].serial == "00:f5:f9:c8:f8:c3:3e:4c:e8:4d:d4:8f:cb:03:cc:b0:75" or
                 pe.signatures[i].serial == "f5:f9:c8:f8:c3:3e:4c:e8:4d:d4:8f:cb:03:cc:b0:75"
             ) and
@@ -12865,7 +12865,7 @@ rule cert_blocklist_effc6d19d6fc85872e4e5b3ccee6d301 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "C\\xC3\\x93IR IP LIMITED" and (
+            pe.signatures[i].subject contains "C\xC3\x93IR IP LIMITED" and (
                 pe.signatures[i].serial == "00:ef:fc:6d:19:d6:fc:85:87:2e:4e:5b:3c:ce:e6:d3:01" or
                 pe.signatures[i].serial == "ef:fc:6d:19:d6:fc:85:87:2e:4e:5b:3c:ce:e6:d3:01"
             ) and
@@ -14157,7 +14157,7 @@ rule cert_blocklist_ed9caeb7911b31bd {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "\\xE4\\xB8\\x8A\\xE6\\xB5\\xB7\\xE5\\xA4\\xA9\\xE6\\xB8\\xB8\\xE8\\xBD\\xAF\\xE4\\xBB\\xB6\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and (
+            pe.signatures[i].subject contains "\xE4\xB8\x8A\xE6\xB5\xB7\xE5\xA4\xA9\xE6\xB8\xB8\xE8\xBD\xAF\xE4\xBB\xB6\xE6\x9C\x89\xE9\x99\x90\xE5\x85\xAC\xE5\x8F\xB8" and (
                 pe.signatures[i].serial == "00:ed:9c:ae:b7:91:1b:31:bd" or
                 pe.signatures[i].serial == "ed:9c:ae:b7:91:1b:31:bd"
             ) and
@@ -15087,7 +15087,7 @@ rule cert_blocklist_6294b8acc35dea7d32a95ac5d4536f8f {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "\\xE9\\x87\\x8D\\xE5\\xBA\\x86\\xE6\\x8E\\xA2\\xE9\\x95\\xBF\\xE7\\xBD\\x91\\xE7\\xBB\\x9C\\xE7\\xA7\\x91\\xE6\\x8A\\x80\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and
+            pe.signatures[i].subject contains "\xE9\x87\x8D\xE5\xBA\x86\xE6\x8E\xA2\xE9\x95\xBF\xE7\xBD\x91\xE7\xBB\x9C\xE7\xA7\x91\xE6\x8A\x80\xE6\x9C\x89\xE9\x99\x90\xE5\x85\xAC\xE5\x8F\xB8" and
             pe.signatures[i].serial == "62:94:b8:ac:c3:5d:ea:7d:32:a9:5a:c5:d4:53:6f:8f" and
             1517443200 <= pe.signatures[i].not_after
         )
@@ -16519,7 +16519,7 @@ rule cert_blocklist_6eb02ac2beb9611ed57eb12e {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "\\xE6\\x9D\\xA8\\xE5\\x87\\x8C\\xE4\\xBC\\xAF\\xE4\\xB9\\x90\\xE7\\xBD\\x91\\xE7\\xBB\\x9C\\xE7\\xA7\\x91\\xE6\\x8A\\x80\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and
+            pe.signatures[i].subject contains "\xE6\x9D\xA8\xE5\x87\x8C\xE4\xBC\xAF\xE4\xB9\x90\xE7\xBD\x91\xE7\xBB\x9C\xE7\xA7\x91\xE6\x8A\x80\xE6\x9C\x89\xE9\x99\x90\xE5\x85\xAC\xE5\x8F\xB8" and
             pe.signatures[i].serial == "6e:b0:2a:c2:be:b9:61:1e:d5:7e:b1:2e" and
             1585023767 <= pe.signatures[i].not_after
         )
@@ -16791,7 +16791,7 @@ rule cert_blocklist_1eb816aa49e4894d9e9f78729e53cd48 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "\\xE5\\x96\\x84\\xE5\\x90\\x9B \\xE9\\x9F\\xA6" and
+            pe.signatures[i].subject contains "\xE5\x96\x84\xE5\x90\x9B \xE9\x9F\xA6" and
             pe.signatures[i].serial == "1e:b8:16:aa:49:e4:89:4d:9e:9f:78:72:9e:53:cd:48" and
             1429056000 <= pe.signatures[i].not_after
         )
@@ -17097,7 +17097,7 @@ rule cert_blocklist_21bfddb6a66435d1adce2ceb23ed7c9a {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "\\xE6\\x9D\\xA8\\xE6\\xB7\\x87\\xE6\\x99\\xBA" and
+            pe.signatures[i].subject contains "\xE6\x9D\xA8\xE6\xB7\x87\xE6\x99\xBA" and
             pe.signatures[i].serial == "21:bf:dd:b6:a6:64:35:d1:ad:ce:2c:eb:23:ed:7c:9a" and
             1395297334 <= pe.signatures[i].not_after
         )
@@ -17281,7 +17281,7 @@ rule cert_blocklist_08aa03f385f870e3a6d243b74b1dadf6 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "\\xE4\\xB8\\x9C\\xE8\\x8E\\x9E\\xE5\\xB8\\x82\\xE8\\x85\\xBE\\xE4\\xBA\\x91\\xE8\\xAE\\xA1\\xE7\\xAE\\x97\\xE6\\x9C\\xBA\\xE7\\xA7\\x91\\xE6\\x8A\\x80\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and
+            pe.signatures[i].subject contains "\xE4\xB8\x9C\xE8\x8E\x9E\xE5\xB8\x82\xE8\x85\xBE\xE4\xBA\x91\xE8\xAE\xA1\xE7\xAE\x97\xE6\x9C\xBA\xE7\xA7\x91\xE6\x8A\x80\xE6\x9C\x89\xE9\x99\x90\xE5\x85\xAC\xE5\x8F\xB8" and
             pe.signatures[i].serial == "08:aa:03:f3:85:f8:70:e3:a6:d2:43:b7:4b:1d:ad:f6" and
             1352678400 <= pe.signatures[i].not_after
         )
